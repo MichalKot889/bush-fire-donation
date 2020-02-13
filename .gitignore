@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+client/build
+.idea/
+package-lock.json
+transactions.log
