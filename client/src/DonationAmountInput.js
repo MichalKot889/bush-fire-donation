@@ -18,7 +18,7 @@ const DonationAmountInput = ({ setAmount, setName, setClientSecret, history }) =
         // We don't want to let default form submission happen here, which would refresh the page.
         ev.preventDefault();
 
-        if(amount && name) {
+        if(amount && name && amount > 0 && amount <= 10000) {
             setAmount(amount);
             setName(name);
             Client.fetchClientSecret(amount).then(cs => setClientSecret(cs.client_secret));
