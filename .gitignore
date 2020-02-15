@@ -4,3 +4,4 @@ client/build
 .idea/
 package-lock.json
 transactions.log
+client/package-lock.json
