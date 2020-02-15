@@ -1,4 +1,4 @@
-# Wildlife donation app
+# Bush fire donation app
 
 ## Installation
 After cloning the git repo, simply run
