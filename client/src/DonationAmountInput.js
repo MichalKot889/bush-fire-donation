@@ -18,17 +18,19 @@ const DonationAmountInput = ({ setAmount, setName, setClientSecret, history }) =
         // We don't want to let default form submission happen here, which would refresh the page.
         ev.preventDefault();
 
-        setAmount(amount);
-        setName(name);
-        Client.fetchClientSecret(amount).then(cs => setClientSecret(cs.client_secret));
+        if(amount && name) {
+            setAmount(amount);
+            setName(name);
+            Client.fetchClientSecret(amount).then(cs => setClientSecret(cs.client_secret));
 
-        history.push('/checkout');
+            history.push('/checkout');
+        }
     }
 
     return (
         <form onSubmit={handleSubmit}>
             <h1>Save Australian Wildlife</h1>
-            <p>Enter the amount you would like to donate to help animals impacted by bush fires in Australia</p>
+            <p>Enter the amount you would like to donate to help animals impacted by bush fires in Australia (AUD)</p>
             <input
                 type='number'
                 min={0}

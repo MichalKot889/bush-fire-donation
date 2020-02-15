@@ -23,13 +23,6 @@ const App = () => {
                       setClientSecret={setClientSecret}
                       history={history}
                   />
-                  /*<Products
-                      products={products}
-                      selectProduct={setSelectedProduct}
-                      history={history}
-
-
-                  />*/
               )}
           />
           <Route
