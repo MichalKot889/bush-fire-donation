@@ -20,9 +20,6 @@ The webhook to acknowledge successful payment is located at
 ### `localhost:3000/webhook`
 It has been tested using Stripe CLI.
 
-## Build production deployment
-### `npm run build`
-
 ## Transactions log
 Completed transactions are being stored in `transactions.log`. To view all completed transactions simply run:
 ### `cat transactions.log`
