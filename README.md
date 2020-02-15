@@ -2,7 +2,7 @@
 
 ## Installation
 After cloning the git repo, simply run
-### `npm install`
+### `sh install.sh`
 
 ## Run app locally
 To run app locally, run

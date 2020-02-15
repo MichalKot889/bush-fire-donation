@@ -37,7 +37,7 @@ class CheckoutForm extends React.Component {
     };
 
     render() {
-        
+
         if(!this.props.amount)
             this.props.history.push('/');
 
